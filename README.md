@@ -1,12 +1,14 @@
 # Comandos iniciais:
-``` bash
+
+```bash
   mkdir entity-framework
   cd entity-framework
   dotnet new mvc
 ```
 
 # Comandos git:
-``` bash
+
+```bash
   git init
   git add .
   git commit -m "Iniciando projeto"
@@ -18,14 +20,16 @@
 ```
 
 # Componentes instalados:
-``` bash
+
+```bash
   dotnet add package Microsoft.EntityFrameworkCore --version 5.0.8
   dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.8
   dotnet add package Pomelo.EntityFrameworkCore.MySql --version 5.0.1
 ```
 
 # Instalando mysql no servidor
-``` SQL
+
+```SQL
 sudo apt install mysql-server
 sudo mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
@@ -35,19 +39,23 @@ FLUSH PRIVILEGES;
 ```
 
 # Comandos para migração:
-``` bash
+
+```bash
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add ClienteAdd
 dotnet ef database update
 ```
 
 # Instalação do code generator
-``` bash
+
+```bash
 dotnet tool install -g dotnet-aspnet-codegenerator
 ```
 
 # Gerando o scaffold de clientes
-``` bash
+
+```bash
 dotnet aspnet-codegenerator controller -name ClientesController -m Cliente -dc DbContexto --relativeFolderPath Controllers --useDefaultLayout
 ```
 
+Amanda Luz
